@@ -1,0 +1,86 @@
+/* Reset some default styles for print */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Times New Roman', serif;
+  }
+  
+  /* Adjustments for print */
+  @media print {
+    #header, #navbar, .back-to-top, #printButton {
+      display: none; /* Hide header, navbar, back-to-top button, and print button */
+    }
+  
+    #hero {
+      height: auto; /* Adjust height for print */
+      background: none; /* Remove background image for print */
+      color: #000; /* Set text color for print */
+    }
+  
+    .hero-title, .hero-subtitle {
+      font-size: 16px; /* Adjust font size for print */
+    }
+  
+    .about-info {
+      margin-top: 10px; /* Adjust margin for print */
+    }
+  
+    .service-ico {
+      display: none; /* Hide service icons for print */
+    }
+  
+    .title-a, .subtitle-a {
+      font-size: 14px; /* Adjust font size for print */
+    }
+  
+    .service-box {
+      margin-bottom: 15px; /* Adjust margin for print */
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+  
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+  
+    th {
+      background-color: #f2f2f2;
+    }
+  
+    video, audio, iframe {
+      display: none; /* Hide videos, sounds, and iframes for print */
+    }
+  
+    video:empty, audio:empty, iframe:empty {
+      display: none;
+    }
+  
+    a[href*="youtube.com"] {
+      display: none; /* Hide links containing "youtube.com" */
+    }
+  
+    footer {
+      background-color: #fff; /* Set background color for print */
+      color: #000; /* Set text color for print */
+    }
+  
+    /* Add a print link at the bottom */
+    body:after {
+      content: "Printed on " counter(page) " of " counter(pages);
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      padding: 5px;
+      font-size: 10px;
+    }
+  }
+  

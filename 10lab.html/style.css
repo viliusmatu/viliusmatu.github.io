@@ -1,0 +1,209 @@
+
+/* Mobile-first approach */
+@media (max-width: 767px) {
+  #hero {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .hero-title {
+    font-size: 32px; /* Adjust font size for smaller screens */
+  }
+
+  .hero-subtitle {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .navbar {
+    justify-content: center; /* Center navigation items on smaller screens */
+  }
+
+  .navbar li {
+    margin: 0 10px; /* Reduce margin for navigation items on smaller screens */
+  }
+
+  .about-img {
+    margin-bottom: 20px; /* Add margin for better spacing on smaller screens */
+  }
+
+  .about-info {
+    text-align: center; /* Center about info on smaller screens */
+  }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: flex-end; /* Revert to original justify-content for larger screens */
+  }
+
+  .navbar li {
+    margin: 0 15px;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 992px) {
+  .hero-title {
+    font-size: 48px; /* Adjust font size for larger screens */
+  }
+
+  .hero-subtitle {
+    font-size: 24px; /* Adjust font size for larger screens */
+  }
+
+  .about-info {
+    margin-top: 40px; /* Increase margin for better spacing on larger screens */
+  }
+}
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header styles */
+#header {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Hero Section styles */
+#hero {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+}
+
+
+.about-info {
+  margin-top: 20px;
+}
+
+.title-s {
+  font-weight: bold;
+}
+
+/* Services Section styles */
+.services-mf {
+  padding: 50px 0;
+  text-align: center; /* Center the content in the services section */
+}
+
+.title-a {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.subtitle-a {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.service-box {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-ico {
+  width: 60px;
+  height: 60px;
+  background-color: #f8f9fa;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.s-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.s-description {
+  font-size: 16px;
+  color: #666;
+}
+
+.title-box {
+  text-align: center; /* Center the title in the title-box */
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; /* Center the content in the footer */
+}
+
+/* Back to top button styles */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+#social-icons {
+  width: 20px; /* Add !important to ensure this style takes precedence */
+  height: 20px;
+}
